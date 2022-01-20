@@ -47,19 +47,9 @@ class Produtos extends Controller
     {
         $produto_model = new ProdutoModel();
 
-        $dados = [
-            'nome'              => "Produto teste ALTERADO",
-            'descricao'         => "Produto Novo",
-            'valor_de_compra'   => 299.90,
-            'valor_de_venda'    => 399.9,
-            'quantidade'        => 7,
-            'validade'          => ""
-        ];
-
         $produto_model
             ->where('id_produto', 2)
-            ->set($dados)
-            ->update(); 
+            ->delete(); 
             
         dd();
     }
