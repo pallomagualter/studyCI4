@@ -47,12 +47,21 @@ class Produtos extends Controller
     {
         $produto_model = new ProdutoModel();
 
-        $produto_model
-            ->where('id_produto', 2)
-            ->delete(); 
+        $produto_model->insert([
+            'nome'              => "Produto teste",
+            'descricao'         => "Produto Novo",
+            'valor_de_compra'   => 199.90,
+            'valor_de_venda'    => 399.9,
+            'quantidade'        => 7,
+            'validade'          => ""
+
+        ]);
             
         dd();
     }
 }
 
+/*
+    Principais métodos: findAll(); first(); insert(); update(); delete();
+*/
 ?>
