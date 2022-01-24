@@ -10,11 +10,15 @@ class Clientes extends Controller
 
     public function index()
     {
-       return "Index Clientes";
+        $cliente_model = new ClienteModel();
+        
+        $clientes = $cliente_model
+                        ->findAll();
+
+        $data['clientes'] = $clientes;
+
+        echo View('clientes/index', $data);
     }
 }
 
-/*
-    Principais métodos: findAll(); first(); insert(); update(); delete();
-*/
 ?>
