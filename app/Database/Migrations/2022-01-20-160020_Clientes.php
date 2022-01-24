@@ -43,6 +43,10 @@ class Clientes extends Migration
             'limite_de_credito' => [
                 'type'              => 'DOUBLE'
             ],
+            
+            'dia_de_pagamento' => [
+                'type'              => 'INT'
+            ],
                         
             'created_at' => [
                 'type'              => 'DATETIME'
