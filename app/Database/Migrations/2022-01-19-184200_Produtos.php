@@ -34,23 +34,23 @@ class Produtos extends Migration
             ],
             
             'quantidade' => [
-                'type'              => 'INT',
+                'type'              => 'INT'
             ],
           
             'validade' => [
-                'type'              => 'DATE',
+                'type'              => 'DATE'
             ],
                         
             'created_at' => [
-                'type'              => 'DATETIME',
+                'type'              => 'DATETIME'
             ],
                         
             'updated_at' => [
-                'type'              => 'DATETIME',
+                'type'              => 'DATETIME'
             ],
                                     
             'deleted_at' => [
-                'type'              => 'DATETIME',
+                'type'              => 'DATETIME'
             ]
         ]);
 
